@@ -1,0 +1,33 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+
+  "name": "Music Hotkeys",
+  "short_name": "goosic",
+  "description": "Access your music from any tab with hotkeys",
+  "version": "0.3",
+
+  "permissions": [
+    "https://play.google.com/music/*",
+    "tabs"
+  ],
+    "icons": { "48" : "icon.png" },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "3": {
+      "description": "Play/Pause",
+      "suggested_key": "Alt+Shift+P"
+    },
+    "4": {
+      "description": "Skip",
+      "suggested_key": "Alt+Shift+Period"
+    },
+    "2": {
+      "description": "Previous",
+      "suggested_key": "Alt+Shift+Comma"
+    }
+  }
+}
